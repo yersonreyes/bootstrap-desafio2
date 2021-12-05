@@ -1,0 +1,122 @@
+:root {
+  --fontbase: "Roboto", sans-serif;
+  --headline1: 300 20px/24px var(--fontbase);
+  --basefont1: 300 16px/19px var(--fontbase);
+  --basefont2: 300 13px/15px var(--fontbase);
+  --basefont3: 500 21px/24px var(--fontbase);
+  --white: #fff;
+  --success: #28a745;
+  --black: #212529;
+  --gris: #707070;
+}
+
+.header {
+  background: var(--success);
+}
+.section {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-top: 16px;
+  padding-bottom: 100px;
+}
+
+.card {
+  height: 380px;
+}
+
+.card-body {
+  padding-bottom: 0;
+}
+.card-title {
+  font: var(--headline1);
+}
+
+.card-text {
+  font: var(--basefont1);
+  color: var(--gris);
+  margin: 0;
+}
+
+.card-text-direction {
+  font: var(--basefont2);
+  color: var(--gris);
+}
+.card hr {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 24px;
+}
+.card-value {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px 15px 24px;
+}
+
+.card-value p {
+  margin: 0;
+  font: var(--basefont1);
+  color: var(--gris);
+}
+
+.card-value p:nth-child(2n) {
+  color: var(--success);
+  font: var(--headline1);
+  font-weight: 500;
+}
+
+.form-container {
+  background: var(--success);
+}
+
+.form {
+  background: var(--success);
+  padding: 16px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.form h3 {
+  color: var(--white);
+  text-align: center;
+}
+.form button {
+  display: block;
+  margin: 0 auto;
+  width: 116px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+}
+
+.footer p {
+  text-align: center;
+  font: var(--basefont1);
+  color: var(--gris);
+}
+
+@media screen and (min-width: 600px) {
+  .section {
+    padding-top: 60px;
+  }
+  .form {
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    padding: 0 120px;
+  }
+}
